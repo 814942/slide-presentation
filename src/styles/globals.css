@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply min-h-screen overflow-hidden;
+  }
+
+  /* Hide scrollbar for presentation mode */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  * {
+    scrollbar-width: none;
+  }
+}
+
+@layer components {
+  .slide-enter {
+    @apply opacity-0 translate-x-8;
+  }
+
+  .slide-enter-active {
+    @apply opacity-100 translate-x-0 transition-all duration-300 ease-out;
+  }
+
+  .slide-exit {
+    @apply opacity-100 translate-x-0;
+  }
+
+  .slide-exit-active {
+    @apply opacity-0 -translate-x-8 transition-all duration-300 ease-out;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent-blue via-accent-cyan to-accent-green bg-clip-text text-transparent;
+  }
+}
