@@ -68,7 +68,7 @@ export default function NextStepsSlide() {
             ¿Preguntas?
           </p>
           <p className="mt-2 text-text-muted">
-            pablo.garay@mailamericas.com
+            pablo.garay.dev@gmail.com
           </p>
         </motion.div>
       </div>
